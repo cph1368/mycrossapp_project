@@ -1,0 +1,8 @@
+{
+  "name": "studentassistant1",
+  "app_id": "",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
