@@ -9,44 +9,41 @@ import { Camera, CameraOptions } from '@ionic-native/camera';
 export class HomePage {
   public photos: any;
   public base64Image: string;
-  constructor(public navCtrl: NavController, private camera: Camera, private alertCtrl: AlertController) {
+  constructor(public navCtrl: NavController,private camera: Camera,private alertCtrl: AlertController) {
 
   }
-  ngOnIntit() {
-    this.photos = [];
+    ngOnIntit(){
+      this.photos= [];
 
-  }
-
-  takePhoto() {
-    const options: CameraOptions = {
-      quality: 50,
-      destinationType: this.camera.DestinationType.DATA_URL,
-      encodingType: this.camera.EncodingType.JPEG,
-      mediaType: this.camera.MediaType.PICTURE
     }
 
-    this.camera.getPicture(options).then((imageData) => {
-      // imageData is either a base64 encoded string or a file URI
-      // If it's base64:
-      this.base64Image = 'data:image/jpeg;base64,' + imageData;
-    
-      this.photos.push(this.base64Image);
-      this.photos.reverse();
+    takePhoto(){
+      const options: CameraOptions = {
+        quality: 50,
+        destinationType: this.camera.DestinationType.DATA_URL,
+        encodingType: this.camera.EncodingType.JPEG,
+        mediaType: this.camera.MediaType.PICTURE
+      }
+      
+      this.camera.getPicture(options).then((imageData) => {
+       // imageData is either a base64 encoded string or a file URI
+       // If it's base64:
+       this.base64Image = 'data:image/jpeg;base64,' + imageData;
+       this.photos.push(this.base64Image);
+       this.photos.reverse();
 
 
-    }, (err) => {
-      // Handle error
+      }, (err) => {
+       // Handle error
+      });
 
-      console.log(err);
-    });
+    }
 
-  }
+    deletePhoto(index){
 
-  deletePhoto(index) {
-
-    let confirm = this.alertCtrl.create({
-      title: 'Are you sure you want to delete this picture ?',
-      message: '',
+       let confirm = this.alertCtrl.create({
+      title: 'Use this lightsaber?',
+      message: 'Do you agree to use this lightsaber to do good across the intergalactic galaxy?',
       buttons: [
         {
           text: 'No',
@@ -57,13 +54,13 @@ export class HomePage {
         {
           text: 'Yes',
           handler: () => {
-            this.photos.splice(index,1);
+            console.log('Agree clicked');
           }
         }
       ]
     });
     confirm.present();
-    //this.photos.splice(index,1);
-  }
+      //this.photos.splice(index,1);
+    }
 
 }

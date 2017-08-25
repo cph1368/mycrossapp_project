@@ -189,14 +189,12 @@ var HomePage = (function () {
             _this.photos.reverse();
         }, function (err) {
             // Handle error
-            console.log(err);
         });
     };
     HomePage.prototype.deletePhoto = function (index) {
-        var _this = this;
         var confirm = this.alertCtrl.create({
-            title: 'Are you sure you want to delete this picture ?',
-            message: '',
+            title: 'Use this lightsaber?',
+            message: 'Do you agree to use this lightsaber to do good across the intergalactic galaxy?',
             buttons: [
                 {
                     text: 'No',
@@ -207,7 +205,7 @@ var HomePage = (function () {
                 {
                     text: 'Yes',
                     handler: function () {
-                        _this.photos.splice(index, 1);
+                        console.log('Agree clicked');
                     }
                 }
             ]
@@ -219,7 +217,7 @@ var HomePage = (function () {
 }());
 HomePage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-home',template:/*ion-inline-start:"/Users/corryhandayani/Desktop/studentassistant1/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Taking Notes</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <button ion-button full (click)="takePhoto()">  \n    <ion-icon name="camera"></ion-icon> &nbsp;&nbsp; Take A Note\n  </button>\n\n  <ion-grid>\n    <ion-row>\n      <ion-col col-6 *ngFor = "let photo of photos; let id = index">\n            <ion-card class="block">\n              <ion-icon name="trash" class="deleteIcon" (click)="deletePhoto(id)"></ion-icon>\n                <img [src]="photo" *ngIf="photo"/>\n            </ion-card>\n\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n\n\n\n</ion-content>\n'/*ion-inline-end:"/Users/corryhandayani/Desktop/studentassistant1/src/pages/home/home.html"*/
+        selector: 'page-home',template:/*ion-inline-start:"/Users/corryhandayani/Desktop/studentassistant1/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Taking Notes</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <button ion-button full (click)="takePhoto()">  \n    <ion-icon name="camera"></ion-icon> &nbsp;&nbsp; Take A Note\n  </button>\n  <img [src]="base64Image" *ngIf="base64Image"/>\n\n  <!--<ion-grid>\n    <ion-row>\n      <ion-col col-6 *ngFor = "let photo of photos; let id = index">\n            <ion-card class="block">\n              <ion-icon name="trash" class="deleteIcon" (click)="deletePhoto(id)"></ion-icon>\n                <img [src]="base64Image" *ngIf="base64Image"/>\n            </ion-card>\n\n      </ion-col>\n    </ion-row>\n  </ion-grid>-->\n\n\n\n</ion-content>\n'/*ion-inline-end:"/Users/corryhandayani/Desktop/studentassistant1/src/pages/home/home.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_camera__["a" /* Camera */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]])
 ], HomePage);
