@@ -38,7 +38,7 @@ export class HomePage {
 
        ionViewDidLoad(){
          
-        
+        console.log('ionViewDidLoad HomePage');
            }
         
            timeChange(time){
