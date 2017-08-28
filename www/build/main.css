@@ -25199,11 +25199,11 @@ ion-navbar.toolbar {
   }
 }
 
-page-home .block {
+page-about .block {
   position: relative;
 }
 
-page-home .block .deleteIcon {
+page-about .block .deleteIcon {
   position: absolute;
   margin-left: 90%;
   margin-top: 5px;
