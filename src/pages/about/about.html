@@ -1,19 +1,24 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Take a Note
-    </ion-title>
-  </ion-navbar>
-</ion-header>
 
-<ion-content padding>
 
-</ion-content>
-<ion-header>
-  <ion-navbar>
-    <ion-title>Taking Notes</ion-title>
-  </ion-navbar>
-</ion-header>
+  <ion-header>
+        <ion-navbar color="dark">
+            <ion-title > <ion-icon name="camera" item-left> </ion-icon>
+               Snap your notes here 
+            </ion-title>
+          </ion-navbar>
+    
+        <ion-list>
+            <ion-list-header> Feeling lazy to take notes? </ion-list-header>
+            <ion-item>
+              <ion-icon name="camera" item-left> </ion-icon>
+            Just take a picture of your notes!
+            </ion-item>
+          </ion-list>
+
+
+      </ion-header>
+
+
 
 <ion-content padding>
   <button ion-button full (click)="takePhoto()">  

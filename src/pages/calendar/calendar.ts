@@ -9,6 +9,7 @@ import * as moment from 'moment';
 export class CalendarPage {
   eventSource = [];
   viewTitle: string;
+  viewSubject: string;
   selectedDay = new Date();
  
   calendar = {
@@ -42,13 +43,16 @@ export class CalendarPage {
      this.viewTitle = title;
    }
   
+
+ 
    onEventSelected(event) {
      let start = moment(event.startTime).format('LLLL');
      let end = moment(event.endTime).format('LLLL');
      
      let alert = this.alertCtrl.create({
        title: '' + event.title,
-       subTitle: 'From: ' + start + '<br>To: ' + end,
+     
+       subTitle: 'You need to start working on this assignment from: ' + start + '<br> <br> <br> Assignment will be due in: ' + end,
        buttons: ['OK']
      })
      alert.present();

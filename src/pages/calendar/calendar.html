@@ -1,8 +1,22 @@
 
 <ion-header>
+    <ion-navbar color="danger">
+        <ion-title > <ion-icon name=  "clipboard" item-left></ion-icon>
+          When is your assignment due ?
+        </ion-title>
+      </ion-navbar>
+
+    <ion-list> 
+        <ion-item color="dark">
+          <ion-icon name="calendar" item-left></ion-icon>
+         Start planning and get your assignments done before the due date !
+         <ion-icon name="done-all" item-right></ion-icon> </ion-item>
+      </ion-list>
+
     <ion-navbar color="primary">
       <ion-title>
         {{ viewTitle }}
+     
       </ion-title>
       <ion-buttons end>
         <button ion-button icon-only (click)="addEvent()">
@@ -18,6 +32,7 @@
           [currentDate]="calendar.currentDate"
           (onEventSelected)="onEventSelected($event)"
           (onTitleChanged)="onViewTitleChanged($event)"
+    
           (onTimeSelected)="onTimeSelected($event)"
           step="30"
           class="calendar">
