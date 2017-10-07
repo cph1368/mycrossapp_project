@@ -1,17 +1,48 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Contact
-    </ion-title>
-  </ion-navbar>
-</ion-header>
+<ion-content class=background>
+ <h1>STUDENT REMINDER</h1>
+  <ion-card>    
+    <ion-card-header>
+        LOGIN
+          <ion-card-content>
+            <ion-list no-lines>
 
-<ion-content>
-  <ion-list>
-    <ion-list-header>Follow us on Twitter</ion-list-header>
-    <ion-item>
-      <ion-icon name="ionic" item-left></ion-icon>
-      @ionicframework
-    </ion-item>
-  </ion-list>
+              <ion-item>
+                <ion-label floating>Username </ion-label>
+                <ion-input type="text"></ion-input>
+              </ion-item>
+              
+
+              <ion-item>
+                  <ion-label floating>Password</ion-label>
+                  <ion-input type="Password"></ion-input>
+                </ion-item>
+
+
+              <ion-item>
+                  <p>Forgot Password?<a> &nbsp;&nbsp;&nbsp;&nbsp;Click here</a></p>
+                  </ion-item>
+             
+                  <button ion-button color="danger"block outline>Login</button>
+
+            </ion-list>
+
+            <b>OR</b> 
+          
+                <button ion-button color="primary"ion-left block> 
+                <ion-icon name="logo-facebook"></ion-icon>
+                <div>&nbsp;&nbsp;&nbsp;&nbsp;  Login with Facebook</div></button>
+        
+
+      
+                <button ion-button color="danger"ion-left block>
+                <ion-icon name="logo-google"></ion-icon>
+                <div>&nbsp;&nbsp;&nbsp;&nbsp; Login with Google</div></button>
+         
+   
+          </ion-card-content>
+
+    </ion-card-header>
+
+
+  </ion-card>
 </ion-content>

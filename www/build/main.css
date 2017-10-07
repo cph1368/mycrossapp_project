@@ -25199,15 +25199,6 @@ ion-navbar.toolbar {
   }
 }
 
-page-about {
-  background: #FC466B;
-  /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, left top, right top, from(#3F5EFB), to(#FC466B));
-  background: linear-gradient(to right, #3F5EFB, #FC466B);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
 page-about .block {
   position: relative;
 }
@@ -25219,13 +25210,60 @@ page-about .block .deleteIcon {
   color: #ffffff;
 }
 
-page-contact {
-  background: #FC466B;
-  /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, left top, right top, from(#3F5EFB), to(#FC466B));
-  background: linear-gradient(to right, #3F5EFB, #FC466B);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+page-about .background {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(10deg, #4E5EFC, #4EE7FC);
+}
+
+page-about h1 {
+  color: #fff;
+  font-size: 3em;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: lighter;
+  padding-bottom: 30px;
+}
+
+page-about .scroll-content {
+  text-align: center;
+  margin: 5px;
+}
+
+page-about ion-card.card {
+  background: rgba(232, 230, 230, 0.6);
+  border-radius: 10px;
+}
+
+page-contact .background {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(10deg, #4E5EFC, #4EE7FC);
+}
+
+page-contact .scroll-content {
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+page-contact ion-card.card {
+  background: rgba(232, 230, 230, 0.6);
+  border-radius: 10px;
+}
+
+page-contact .item {
+  background: rgba(232, 230, 230, 0);
+}
+
+page-contact ion-input {
+  border-bottom: #FD4D73, solid1px;
+}
+
+page-contact h1 {
+  color: #fff;
+  font-size: 3em;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: lighter;
 }
 
 page-home {
