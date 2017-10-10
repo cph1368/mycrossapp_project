@@ -1,14 +1,14 @@
 webpackJsonp([0],{
 
-/***/ 397:
+/***/ 574:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EventModalPageModule", function() { return EventModalPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__event_modal__ = __webpack_require__(398);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__event_modal__ = __webpack_require__(575);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -38,13 +38,13 @@ EventModalPageModule = __decorate([
 
 /***/ }),
 
-/***/ 398:
+/***/ 575:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EventModalPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_moment__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_moment__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -81,7 +81,7 @@ var EventModalPage = (function () {
 EventModalPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPage */])(),
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-event-modal',template:/*ion-inline-start:"/Users/corryhandayani/Desktop/studentreminder/src/pages/event-modal/event-modal.html"*/'<!--\n  Generated template for the EventModalPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n\n<ion-header>\n    <ion-navbar color="primary">\n      <ion-buttons start>\n        <button ion-button icon-only (click)="cancel()">\n          <ion-icon name="close"></ion-icon>\n        </button>\n      </ion-buttons>\n      <ion-title>Assignment Details</ion-title>\n    </ion-navbar>\n  </ion-header>\n\n  <ion-content>\n      <ion-list>\n        <ion-item>\n          <ion-input type="text" placeholder="Assignment details" [(ngModel)]="event.title"></ion-input>\n        </ion-item>\n     \n       \n        <ion-item>\n          <ion-label>When do you want to start working on it ?</ion-label>\n          <ion-datetime displayFormat="MM/DD/YYYY HH:mm" pickerFormat="MMM D:HH:mm" [(ngModel)]="event.startTime" [min]="minDate"></ion-datetime>\n        </ion-item>\n     \n        <ion-item>\n          <ion-label>When is it due ?</ion-label>\n          <ion-datetime displayFormat="MM/DD/YYYY HH:mm" pickerFormat="MMM D:HH:mm" [(ngModel)]="event.endTime" [min]="minDate"></ion-datetime>\n        </ion-item>\n     \n        <ion-item>\n          <ion-label>Do you want to focus all day ?</ion-label>\n          <ion-checkbox [(ngModel)]="event.allDay"></ion-checkbox>\n        </ion-item>\n      </ion-list>\n     \n      <button ion-button full icon-left (click)="save()">\n        <ion-icon name="checkmark"></ion-icon> Add Assignment\n      </button>\n    </ion-content>'/*ion-inline-end:"/Users/corryhandayani/Desktop/studentreminder/src/pages/event-modal/event-modal.html"*/,
+        selector: 'page-event-modal',template:/*ion-inline-start:"/Users/corryhandayani/Desktop/studentreminder copy/src/pages/event-modal/event-modal.html"*/'<!--\n  Generated template for the EventModalPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n\n<ion-header>\n    <ion-navbar color="primary">\n      <ion-buttons start>\n        <button ion-button icon-only (click)="cancel()">\n          <ion-icon name="close"></ion-icon>\n        </button>\n      </ion-buttons>\n      <ion-title>Assignment Details</ion-title>\n    </ion-navbar>\n  </ion-header>\n\n  <ion-content>\n      <ion-list>\n        <ion-item>\n          <ion-input type="text" placeholder="Assignment details" [(ngModel)]="event.title"></ion-input>\n        </ion-item>\n     \n       \n        <ion-item>\n          <ion-label>When do you want to start working on it ?</ion-label>\n          <ion-datetime displayFormat="MM/DD/YYYY HH:mm" pickerFormat="MMM D:HH:mm" [(ngModel)]="event.startTime" [min]="minDate"></ion-datetime>\n        </ion-item>\n     \n        <ion-item>\n          <ion-label>When is it due ?</ion-label>\n          <ion-datetime displayFormat="MM/DD/YYYY HH:mm" pickerFormat="MMM D:HH:mm" [(ngModel)]="event.endTime" [min]="minDate"></ion-datetime>\n        </ion-item>\n     \n        <ion-item>\n          <ion-label>Do you want to focus all day ?</ion-label>\n          <ion-checkbox [(ngModel)]="event.allDay"></ion-checkbox>\n        </ion-item>\n      </ion-list>\n     \n      <button ion-button full icon-left (click)="save()">\n        <ion-icon name="checkmark"></ion-icon> Add Assignment\n      </button>\n    </ion-content>'/*ion-inline-end:"/Users/corryhandayani/Desktop/studentreminder copy/src/pages/event-modal/event-modal.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* ViewController */]])
 ], EventModalPage);

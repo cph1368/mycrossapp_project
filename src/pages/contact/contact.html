@@ -1,5 +1,5 @@
 <ion-content class=background>
- <h1>STUDENT REMINDER</h1>
+ <h1>STUDENT CIRCLE</h1>
   <ion-card>    
     <ion-card-header>
         LOGIN
@@ -8,37 +8,42 @@
 
               <ion-item>
                 <ion-label floating>Username </ion-label>
-                <ion-input type="text"></ion-input>
+                <ion-input type="text" #username></ion-input>
               </ion-item>
               
 
               <ion-item>
                   <ion-label floating>Password</ion-label>
-                  <ion-input type="Password"></ion-input>
+                  <ion-input type="Password"  #password></ion-input>
                 </ion-item>
 
 
-              <ion-item>
+              <!--ion-item>
                   <p>Forgot Password?<a> &nbsp;&nbsp;&nbsp;&nbsp;Click here</a></p>
-                  </ion-item>
+                  </ion-item-->
              
-                  <button ion-button color="danger"block outline>Login</button>
+                  <button ion-button (click)="signInUser()"color="danger"block outline>Login</button>
 
             </ion-list>
 
-            <b>OR</b> 
-          
+            <b>OR</b>  &nbsp;&nbsp;&nbsp;&nbsp; 
+            
+           
+
                 <button ion-button color="primary"ion-left block> 
                 <ion-icon name="logo-facebook"></ion-icon>
                 <div>&nbsp;&nbsp;&nbsp;&nbsp;  Login with Facebook</div></button>
         
-
+                &nbsp;&nbsp;&nbsp;&nbsp; 
       
-                <button ion-button color="danger"ion-left block>
-                <ion-icon name="logo-google"></ion-icon>
-                <div>&nbsp;&nbsp;&nbsp;&nbsp; Login with Google</div></button>
+                <button ion-button color="danger"ion-left block (click)="register()">
+                <ion-icon name="cube"></ion-icon>
+                <div>&nbsp;&nbsp;&nbsp;&nbsp; Register</div></button>
          
-   
+              <!--button ion-button color="danger"ion-left block (click)="register()">
+                 /// <ion-icon name="logo-googleplus"></ion-icon>
+                  //<div>&nbsp;&nbsp;&nbsp;&nbsp; Login with Google</div></button!-->
+           
           </ion-card-content>
 
     </ion-card-header>

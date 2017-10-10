@@ -1,17 +1,36 @@
-import { Component } from '@angular/core';
-import { NavController, AlertController } from 'ionic-angular';
+import { Component, ViewChild  } from '@angular/core';
+import { NavController, AlertController, NavParams } from 'ionic-angular';
 import { Camera, CameraOptions } from '@ionic-native/camera';
+import { ContactPage } from '../contact/contact';
+import { AngularFireAuth } from 'angularfire2/auth';
+
 
 @Component({
   selector: 'page-about',
   templateUrl: 'about.html'
 })
 export class AboutPage {
+
+
+
+  
+   // constructor(private fire: AngularFireAuth, public navCtrl: NavController, public navParams: NavParams) {
+     //this.email = fire.auth.currentUser.email;
+    //}
+  
+    ionViewDidLoad() {
+      console.log('ionViewDidLoad AboutPage');
+    }
+  
+
   public photos: any;
   public base64Image: string;
-  constructor(public navCtrl: NavController,private camera: Camera,private alertCtrl: AlertController) {
-
+  
+  constructor(private fire: AngularFireAuth,public navCtrl: NavController,private camera: Camera,private alertCtrl: AlertController,public navParams: NavParams) {
+   
   }
+
+  
     ngOnIntit(){
       this.photos= [];
 

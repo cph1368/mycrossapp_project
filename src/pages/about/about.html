@@ -8,10 +8,10 @@
     <ion-card>    
         <ion-card-header>
     
-           
+          {{email}}
           
         <ion-list style="padding-bottom:30px">
-            <ion-label> Feeling lazy to take notes? </ion-label>
+            <ion-label> Feeling lazy to write down your notes? </ion-label>
 
            <!-- <ion-item>
               <ion-icon name="camera" item-left> </ion-icon>
@@ -23,7 +23,7 @@
 
           <ion-list style="padding-bottom:30px">
           <button ion-button full (click)="takePhoto()"  >  
-              <ion-icon name="camera"></ion-icon> &nbsp;&nbsp;  Just take a picture of your notes!
+              <ion-icon name="camera"></ion-icon> &nbsp;&nbsp;  Simply capture your notes here!
             </button>
             <img [src]="base64Image" *ngIf="base64Image"/>
           </ion-list>

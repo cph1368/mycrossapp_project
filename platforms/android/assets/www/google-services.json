@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "306156894109",
+    "firebase_url": "https://studentassistant-38d8f.firebaseio.com",
+    "project_id": "studentassistant-38d8f",
+    "storage_bucket": "studentassistant-38d8f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:306156894109:android:1da948d90c786f66",
+        "android_client_info": {
+          "package_name": "com.ionicframework.app427611"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "306156894109-7kch28h1c229jdkinqlcilbnn62cra7g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ionicframework.app427611",
+            "certificate_hash": "fba177b5857f014c2f5733d3a2a31d95292c111c"
+          }
+        },
+        {
+          "client_id": "306156894109-kk0k4oueqahu847aaqmghg776dkmucjq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC32YNZwgnwrAj6a4FRm8ZHFBv7-1BQ8-Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "306156894109-kk0k4oueqahu847aaqmghg776dkmucjq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
