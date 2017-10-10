@@ -79,7 +79,7 @@ ContactPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
         selector: 'page-contact',template:/*ion-inline-start:"/Users/corryhandayani/Desktop/studentreminder copy/src/pages/contact/contact.html"*/'<ion-content class=background>\n <h1>STUDENT CIRCLE</h1>\n  <ion-card>    \n    <ion-card-header>\n        LOGIN\n          <ion-card-content>\n            <ion-list no-lines>\n\n              <ion-item>\n                <ion-label floating>Username </ion-label>\n                <ion-input type="text" #username></ion-input>\n              </ion-item>\n              \n\n              <ion-item>\n                  <ion-label floating>Password</ion-label>\n                  <ion-input type="Password"  #password></ion-input>\n                </ion-item>\n\n\n              <!--ion-item>\n                  <p>Forgot Password?<a> &nbsp;&nbsp;&nbsp;&nbsp;Click here</a></p>\n                  </ion-item-->\n             \n                  <button ion-button (click)="signInUser()"color="danger"block outline>Login</button>\n\n            </ion-list>\n\n            <b>OR</b>  &nbsp;&nbsp;&nbsp;&nbsp; \n            \n           \n\n                <button ion-button color="primary"ion-left block> \n                <ion-icon name="logo-facebook"></ion-icon>\n                <div>&nbsp;&nbsp;&nbsp;&nbsp;  Login with Facebook</div></button>\n        \n                &nbsp;&nbsp;&nbsp;&nbsp; \n      \n                <button ion-button color="danger"ion-left block (click)="register()">\n                <ion-icon name="cube"></ion-icon>\n                <div>&nbsp;&nbsp;&nbsp;&nbsp; Register</div></button>\n         \n              <!--button ion-button color="danger"ion-left block (click)="register()">\n                 /// <ion-icon name="logo-googleplus"></ion-icon>\n                  //<div>&nbsp;&nbsp;&nbsp;&nbsp; Login with Google</div></button!-->\n           \n          </ion-card-content>\n\n    </ion-card-header>\n\n\n  </ion-card>\n</ion-content>\n'/*ion-inline-end:"/Users/corryhandayani/Desktop/studentreminder copy/src/pages/contact/contact.html"*/
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_4_angularfire2_auth__["a" /* AngularFireAuth */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_google_plus__["a" /* GooglePlus */], __WEBPACK_IMPORTED_MODULE_3_angularfire2__["a" /* AngularFireModule */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_4_angularfire2_auth__["a" /* AngularFireAuth */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_google_plus__["a" /* GooglePlus */], __WEBPACK_IMPORTED_MODULE_3_angularfire2__["a" /* AngularFireModule */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */]])
 ], ContactPage);
 
 // login(){
@@ -167,11 +167,11 @@ __decorate([
     __metadata("design:type", Object)
 ], RegisterPage.prototype, "password", void 0);
 RegisterPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPage */])(),
+    Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPage */])(),
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
         selector: 'page-register',template:/*ion-inline-start:"/Users/corryhandayani/Desktop/studentreminder copy/src/pages/register/register.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      Create Account\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  \n  <ion-list>\n\n  <ion-item>\n    <ion-label floating>Username</ion-label>\n    <ion-input type="text" #username></ion-input>\n  </ion-item>\n\n  <ion-item>\n    <ion-label floating>Password</ion-label>\n    <ion-input type="password" #password></ion-input>\n  </ion-item>\n  \n</ion-list>\n\n<div padding>\n  <button block ion-button (click)="registerUser()" item-left>Register</button>\n</div>\n\n</ion-content>\n'/*ion-inline-end:"/Users/corryhandayani/Desktop/studentreminder copy/src/pages/register/register.html"*/,
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_2_angularfire2_auth__["a" /* AngularFireAuth */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_2_angularfire2_auth__["a" /* AngularFireAuth */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */]])
 ], RegisterPage);
 
 //# sourceMappingURL=register.js.map
@@ -257,7 +257,7 @@ var TabsPage = (function () {
     return TabsPage;
 }());
 TabsPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"/Users/corryhandayani/Desktop/studentreminder copy/src/pages/tabs/tabs.html"*/'<ion-tabs  color="primary">\n\n  <ion-tab [root]="tab2Root" tabTitle="Snap your notes here !" tabIcon="camera"></ion-tab>\n\n  <ion-tab [root]="tab4Root" tabTitle="Assignment due dates" tabIcon="calendar"></ion-tab>\n\n  <ion-tab [root]="tab1Root" tabTitle="Notify Me" tabIcon="cube"></ion-tab>\n  \n</ion-tabs>\n'/*ion-inline-end:"/Users/corryhandayani/Desktop/studentreminder copy/src/pages/tabs/tabs.html"*/
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"/Users/corryhandayani/Desktop/studentreminder copy/src/pages/tabs/tabs.html"*/'<ion-tabs  color="primary">\n\n  <ion-tab [root]="tab2Root" tabTitle="Snap your notes here !" tabIcon="camera"></ion-tab>\n\n  <ion-tab [root]="tab4Root" tabTitle="Assignment due dates" tabIcon="calendar"></ion-tab>\n\n  <ion-tab [root]="tab1Root" tabTitle="Notify Me" tabIcon="cube"></ion-tab>\n  \n\n</ion-tabs>\n'/*ion-inline-end:"/Users/corryhandayani/Desktop/studentreminder copy/src/pages/tabs/tabs.html"*/
     }),
     __metadata("design:paramtypes", [])
 ], TabsPage);
@@ -289,12 +289,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 var AboutPage = (function () {
-    function AboutPage(fire, navCtrl, camera, alertCtrl, navParams) {
+    function AboutPage(fire, navCtrl, camera, alertCtrl, navParams, app) {
         this.fire = fire;
         this.navCtrl = navCtrl;
         this.camera = camera;
         this.alertCtrl = alertCtrl;
         this.navParams = navParams;
+        this.app = app;
     }
     // constructor(private fire: AngularFireAuth, public navCtrl: NavController, public navParams: NavParams) {
     //this.email = fire.auth.currentUser.email;
@@ -302,6 +303,14 @@ var AboutPage = (function () {
     AboutPage.prototype.ionViewDidLoad = function () {
         console.log('ionViewDidLoad AboutPage');
     };
+    AboutPage.prototype.logout = function () {
+        var root = this.app.getRootNav();
+        root.popToRoot();
+        //Api Token Logout 
+        // this.fire.auth.signOut(); 
+        // this.navCtrl.push( ContactPage );
+    };
+    // Remove API token 
     AboutPage.prototype.ngOnIntit = function () {
         this.photos = [];
     };
@@ -349,9 +358,9 @@ var AboutPage = (function () {
 }());
 AboutPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-about',template:/*ion-inline-start:"/Users/corryhandayani/Desktop/studentreminder copy/src/pages/about/about.html"*/'\n<ion-content class=background>\n\n    <h1><ion-icon name="camera" item-left> </ion-icon>\n      Snap your notes here \n   </h1>\n   \n    <ion-card>    \n        <ion-card-header>\n    \n          {{email}}\n          \n        <ion-list style="padding-bottom:30px">\n            <ion-label> Feeling lazy to write down your notes? </ion-label>\n\n           <!-- <ion-item>\n              <ion-icon name="camera" item-left> </ion-icon>\n            Just take a picture of your notes!\n            </ion-item>-->\n\n          </ion-list>\n\n\n          <ion-list style="padding-bottom:30px">\n          <button ion-button full (click)="takePhoto()"  >  \n              <ion-icon name="camera"></ion-icon> &nbsp;&nbsp;  Simply capture your notes here!\n            </button>\n            <img [src]="base64Image" *ngIf="base64Image"/>\n          </ion-list>\n \n\n\n  <!--<ion-grid>\n    <ion-row>\n      <ion-col col-6 *ngFor = "let photo of photos; let id = index">\n            <ion-card class="block">\n              <ion-icon name="trash" class="deleteIcon" (click)="deletePhoto(id)"></ion-icon>\n                <img [src]="base64Image" *ngIf="base64Image"/>\n            </ion-card>\n\n      </ion-col>\n    </ion-row>\n  </ion-grid>-->\n\n\n</ion-card-header>\n\n\n  </ion-card>\n        </ion-content>\n\n        '/*ion-inline-end:"/Users/corryhandayani/Desktop/studentreminder copy/src/pages/about/about.html"*/
+        selector: 'page-about',template:/*ion-inline-start:"/Users/corryhandayani/Desktop/studentreminder copy/src/pages/about/about.html"*/'\n<ion-content class=background>\n  \n  \n  <ion-list >\n  <button ion-button color="primary" (click)="logout()">Logout</button>\n</ion-list>\n    <h1><ion-icon name="camera" item-left> </ion-icon>\n      Snap your notes here \n   </h1>\n   \n    <ion-card>    \n        <ion-card-header>\n    \n          {{email}}\n          \n        <ion-list style="padding-bottom:30px">\n            <ion-label> Feeling lazy to write down your notes? </ion-label>\n\n           <!-- <ion-item>\n              <ion-icon name="camera" item-left> </ion-icon>\n            Just take a picture of your notes!\n            </ion-item>-->\n\n          </ion-list>\n\n\n          <ion-list style="padding-bottom:30px">\n          <button ion-button full (click)="takePhoto()"  >  \n              <ion-icon name="camera"></ion-icon> &nbsp;&nbsp;  Simply capture your notes here!\n            </button>\n            <img [src]="base64Image" *ngIf="base64Image"/>\n          </ion-list>\n \n\n\n  <!--<ion-grid>\n    <ion-row>\n      <ion-col col-6 *ngFor = "let photo of photos; let id = index">\n            <ion-card class="block">\n              <ion-icon name="trash" class="deleteIcon" (click)="deletePhoto(id)"></ion-icon>\n                <img [src]="base64Image" *ngIf="base64Image"/>\n            </ion-card>\n\n      </ion-col>\n    </ion-row>\n  </ion-grid>-->\n\n\n</ion-card-header>\n\n\n  </ion-card>\n        </ion-content>\n\n        '/*ion-inline-end:"/Users/corryhandayani/Desktop/studentreminder copy/src/pages/about/about.html"*/
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3_angularfire2_auth__["a" /* AngularFireAuth */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_camera__["a" /* Camera */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3_angularfire2_auth__["a" /* AngularFireAuth */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_camera__["a" /* Camera */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* App */]])
 ], AboutPage);
 
 //# sourceMappingURL=about.js.map
@@ -431,7 +440,7 @@ CalendarPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
         selector: 'page-calendar',template:/*ion-inline-start:"/Users/corryhandayani/Desktop/studentreminder copy/src/pages/calendar/calendar.html"*/'\n<ion-header>\n    <ion-navbar color="danger">\n        <ion-title > <ion-icon name=  "clipboard" item-left></ion-icon>\n          When is your assignment due ?\n        </ion-title>\n      </ion-navbar>\n\n    <ion-list> \n        <ion-item color="dark">\n          <ion-icon name="calendar" item-left></ion-icon>\n         Start planning and get your assignments done before the due date !\n         <ion-icon name="done-all" item-right></ion-icon> </ion-item>\n      </ion-list>\n\n    <ion-navbar color="primary">\n      <ion-title>\n        {{ viewTitle }}\n     \n      </ion-title>\n      <ion-buttons end>\n        <button ion-button icon-only (click)="addEvent()">\n          <ion-icon name="add"></ion-icon>\n        </button>\n      </ion-buttons>\n    </ion-navbar>\n  </ion-header>\n   \n  <ion-content>\n  <calendar [eventSource]="eventSource"\n          [calendarMode]="calendar.mode"\n          [currentDate]="calendar.currentDate"\n          (onEventSelected)="onEventSelected($event)"\n          (onTitleChanged)="onViewTitleChanged($event)"\n    \n          (onTimeSelected)="onTimeSelected($event)"\n          step="30"\n          class="calendar">\n        </calendar>\n  </ion-content>\n'/*ion-inline-end:"/Users/corryhandayani/Desktop/studentreminder copy/src/pages/calendar/calendar.html"*/
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* ModalController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* ModalController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]])
 ], CalendarPage);
 
 //# sourceMappingURL=calendar.js.map
@@ -495,7 +504,7 @@ HomePage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
         selector: 'page-home',template:/*ion-inline-start:"/Users/corryhandayani/Desktop/studentreminder copy/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Set Notification</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<!--on-content>\n  <ion-list>\n    <ion-list-header>Follow us on Twitter</ion-list-header>\n    <ion-item>\n      <ion-icon name="ionic" item-left></ion-icon>\n      @ionicframework\n    </ion-item>\n  </ion-list>\n</ion-content-->\n\n\n<ion-header>\n    <ion-navbar color="primary">\n      <ion-title>\n        Notifications\n      </ion-title>\n    </ion-navbar>\n  </ion-header>\n   \n\n\n  <ion-content>\n   \n      <ion-list no-lines>\n   \n   <ion-item>\n            <ion-label>Notify me at: </ion-label>\n            <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" [(ngModel)]="notifyTime" (ionChange)="timeChange($event)"></ion-datetime>\n          </ion-item>\n   \n          <ion-item>\n              <ion-label>on the following days:</ion-label>\n          </ion-item>\n   \n          <ion-item *ngFor="let day of days">\n              <ion-label>{{day.title}}</ion-label>\n              <ion-checkbox [(ngModel)]="day.checked" color="primary"></ion-checkbox>\n          </ion-item>\n   \n      </ion-list>\n   \n  </ion-content>\n   \n  <ion-footer>\n   \n      <button (click)="addNotifications()" ion-button color="primary" full>Schedule</button>\n      <button (click)="cancelAll()" ion-button color="danger" full>Leave me alone!</button>\n   \n  </ion-footer>\n'/*ion-inline-end:"/Users/corryhandayani/Desktop/studentreminder copy/src/pages/home/home.html"*/
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Platform */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_local_notifications__["a" /* LocalNotifications */]])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* Platform */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_local_notifications__["a" /* LocalNotifications */]])
 ], HomePage);
 
 //# sourceMappingURL=home.js.map
@@ -594,7 +603,7 @@ AppModule = __decorate([
         imports: [
             __WEBPACK_IMPORTED_MODULE_6__angular_platform_browser__["a" /* BrowserModule */],
             __WEBPACK_IMPORTED_MODULE_18_ionic2_calendar__["a" /* NgCalendarModule */],
-            __WEBPACK_IMPORTED_MODULE_7_ionic_angular__["d" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_8__app_component__["a" /* MyApp */], {}, {
+            __WEBPACK_IMPORTED_MODULE_7_ionic_angular__["e" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_8__app_component__["a" /* MyApp */], {}, {
                 links: [
                     { loadChildren: '../pages/register/register.module#RegisterPageModule', name: 'RegisterPage', segment: 'register', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/event-modal/event-modal.module#EventModalPageModule', name: 'EventModalPage', segment: 'event-modal', priority: 'low', defaultHistory: [] }
@@ -603,7 +612,7 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_5_angularfire2_auth__["b" /* AngularFireAuthModule */],
             __WEBPACK_IMPORTED_MODULE_3_angularfire2__["a" /* AngularFireModule */].initializeApp(firebaseAuth)
         ],
-        bootstrap: [__WEBPACK_IMPORTED_MODULE_7_ionic_angular__["b" /* IonicApp */]],
+        bootstrap: [__WEBPACK_IMPORTED_MODULE_7_ionic_angular__["c" /* IonicApp */]],
         entryComponents: [
             __WEBPACK_IMPORTED_MODULE_8__app_component__["a" /* MyApp */],
             __WEBPACK_IMPORTED_MODULE_9__pages_about_about__["a" /* AboutPage */],
@@ -616,7 +625,7 @@ AppModule = __decorate([
         providers: [
             __WEBPACK_IMPORTED_MODULE_15__ionic_native_status_bar__["a" /* StatusBar */],
             __WEBPACK_IMPORTED_MODULE_16__ionic_native_splash_screen__["a" /* SplashScreen */], __WEBPACK_IMPORTED_MODULE_1__ionic_native_camera__["a" /* Camera */], __WEBPACK_IMPORTED_MODULE_17__ionic_native_local_notifications__["a" /* LocalNotifications */],
-            { provide: __WEBPACK_IMPORTED_MODULE_0__angular_core__["v" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_7_ionic_angular__["c" /* IonicErrorHandler */] },
+            { provide: __WEBPACK_IMPORTED_MODULE_0__angular_core__["v" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_7_ionic_angular__["d" /* IonicErrorHandler */] },
             __WEBPACK_IMPORTED_MODULE_2__ionic_native_google_plus__["a" /* GooglePlus */]
         ]
     })
@@ -918,7 +927,7 @@ var MyApp = (function () {
 MyApp = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"/Users/corryhandayani/Desktop/studentreminder copy/src/app/app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"/Users/corryhandayani/Desktop/studentreminder copy/src/app/app.html"*/
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
 ], MyApp);
 
 //# sourceMappingURL=app.component.js.map

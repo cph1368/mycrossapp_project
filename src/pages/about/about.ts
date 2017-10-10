@@ -1,5 +1,5 @@
 import { Component, ViewChild  } from '@angular/core';
-import { NavController, AlertController, NavParams } from 'ionic-angular';
+import { NavController,App, AlertController, NavParams } from 'ionic-angular';
 import { Camera, CameraOptions } from '@ionic-native/camera';
 import { ContactPage } from '../contact/contact';
 import { AngularFireAuth } from 'angularfire2/auth';
@@ -26,11 +26,23 @@ export class AboutPage {
   public photos: any;
   public base64Image: string;
   
-  constructor(private fire: AngularFireAuth,public navCtrl: NavController,private camera: Camera,private alertCtrl: AlertController,public navParams: NavParams) {
+  constructor(private fire: AngularFireAuth,public navCtrl: NavController,private camera: Camera,private alertCtrl: AlertController,public navParams: NavParams,public app: App) {
    
   }
 
-  
+
+  logout(): void {
+
+    const root = this.app.getRootNav();
+    root.popToRoot();
+    //Api Token Logout 
+  // this.fire.auth.signOut(); 
+  // this.navCtrl.push( ContactPage );
+
+}
+
+   // Remove API token 
+ 
     ngOnIntit(){
       this.photos= [];
 
