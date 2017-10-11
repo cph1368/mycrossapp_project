@@ -3,6 +3,7 @@ import { NavController,App, AlertController, NavParams } from 'ionic-angular';
 import { Camera, CameraOptions } from '@ionic-native/camera';
 import { ContactPage } from '../contact/contact';
 import { AngularFireAuth } from 'angularfire2/auth';
+import firebase from 'firebase';
 
 
 @Component({
@@ -52,46 +53,52 @@ export class AboutPage {
       const options: CameraOptions = {
         quality: 50,
         destinationType: this.camera.DestinationType.DATA_URL,
-        encodingType: this.camera.EncodingType.JPEG,
+        encodingType: this.camera.EncodingType.PNG,
         mediaType: this.camera.MediaType.PICTURE
       }
       
       this.camera.getPicture(options).then((imageData) => {
        // imageData is either a base64 encoded string or a file URI
        // If it's base64:
-       this.base64Image = 'data:image/jpeg;base64,' + imageData;
+       const selfieRef = firebase.storage().ref('Pictures/user1/Picture.png');
+       selfieRef
+         .putString(imageData, 'base64', {contentType: 'image/png'})
+         .then(savedPicture => {
+           firebase
+             .database()
+             .ref(`users/user1/Picture`)
+             .set(savedPicture.downloadURL);
+         });
+     });
+     
+       this.base64Image = 'data:image/jpeg;base64,' + 'imageData';
        this.photos.push(this.base64Image);
        this.photos.reverse();
+      
 
 
-      }, (err) => {
-       // Handle error
-      });
+    //deletePhoto(index){
 
-    }
-
-    deletePhoto(index){
-
-       let confirm = this.alertCtrl.create({
-      title: 'Use this lightsaber?',
-      message: 'Do you agree to use this lightsaber to do good across the intergalactic galaxy?',
-      buttons: [
-        {
-          text: 'No',
-          handler: () => {
-            console.log('Disagree clicked');
-          }
-        },
-        {
-          text: 'Yes',
-          handler: () => {
-            console.log('Agree clicked');
-          }
-        }
-      ]
-    });
-    confirm.present();
-      //this.photos.splice(index,1);
+     //  let confirm = this.alertCtrl.create({
+     // title: 'Use this lightsaber?',
+     // message: 'Do you agree to use this lightsaber to do good across the intergalactic galaxy?',
+     // buttons: [
+    //    {
+       //   text: 'No',
+        //  handler: () => {
+        //    console.log('Disagree clicked');
+        //  }
+     //   },
+     //   {
+       //   text: 'Yes',
+       //   handler: () => {
+       //     console.log('Agree clicked');
+      //    }
+      //  }
+     // ]
+   // });
+   //confirm.present();
+    //this.photos.splice(index,1);
     }
 
 }
