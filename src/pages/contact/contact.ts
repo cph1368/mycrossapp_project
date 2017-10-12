@@ -31,7 +31,7 @@ export class ContactPage {
 
     alert(message: string) {
       this.alertCtrl.create({
-        title: 'Info!',
+        title: 'Welcome',
         subTitle: message,
         buttons: ['OK']
       }).present();
@@ -42,7 +42,7 @@ export class ContactPage {
       this.fire.auth.signInWithEmailAndPassword(this.user.value , this.password.value)
       .then( auth => {
         console.log('got some data', this.fire.auth.currentUser);
-        this.alert('Success! You\'re logged in');
+        this.alert('Thank you for using the app! You\'re sucessfully logged into your account');
     this.navCtrl.push( TabsPage );
        
        // user is logged in

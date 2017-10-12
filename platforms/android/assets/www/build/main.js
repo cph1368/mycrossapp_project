@@ -42,7 +42,7 @@ var ContactPage = (function () {
     };
     ContactPage.prototype.alert = function (message) {
         this.alertCtrl.create({
-            title: 'Info!',
+            title: 'Welcome',
             subTitle: message,
             buttons: ['OK']
         }).present();
@@ -52,7 +52,7 @@ var ContactPage = (function () {
         this.fire.auth.signInWithEmailAndPassword(this.user.value, this.password.value)
             .then(function (auth) {
             console.log('got some data', _this.fire.auth.currentUser);
-            _this.alert('Success! You\'re logged in');
+            _this.alert('Thank you for using the app! You\'re sucessfully logged into your account');
             _this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_5__tabs_tabs__["a" /* TabsPage */]);
             // user is logged in
         })
@@ -77,7 +77,7 @@ __decorate([
 ], ContactPage.prototype, "password", void 0);
 ContactPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-contact',template:/*ion-inline-start:"/Users/corryhandayani/Desktop/studentreminder copy 2/src/pages/contact/contact.html"*/'<ion-content class=background>\n <h1>STUDENT CIRCLE</h1>\n  <ion-card>    \n    <ion-card-header>\n        LOGIN\n          <ion-card-content>\n            <ion-list no-lines>\n\n              <ion-item>\n                <ion-label floating>Username </ion-label>\n                <ion-input type="text" #username></ion-input>\n              </ion-item>\n              \n\n              <ion-item>\n                  <ion-label floating>Password</ion-label>\n                  <ion-input type="Password"  #password></ion-input>\n                </ion-item>\n\n\n              <!--ion-item>\n                  <p>Forgot Password?<a> &nbsp;&nbsp;&nbsp;&nbsp;Click here</a></p>\n                  </ion-item-->\n             \n                  <button ion-button (click)="signInUser()"color="danger"block outline>Login</button>\n\n            </ion-list>\n\n            <b>OR</b>  &nbsp;&nbsp;&nbsp;&nbsp; \n            \n           \n\n                <button ion-button color="primary"ion-left block> \n                <ion-icon name="logo-facebook"></ion-icon>\n                <div>&nbsp;&nbsp;&nbsp;&nbsp;  Login with Facebook</div></button>\n        \n                &nbsp;&nbsp;&nbsp;&nbsp; \n      \n                <button ion-button color="danger"ion-left block (click)="register()">\n                <ion-icon name="cube"></ion-icon>\n                <div>&nbsp;&nbsp;&nbsp;&nbsp; Register</div></button>\n         \n              <!--button ion-button color="danger"ion-left block (click)="register()">\n                 /// <ion-icon name="logo-googleplus"></ion-icon>\n                  //<div>&nbsp;&nbsp;&nbsp;&nbsp; Login with Google</div></button!-->\n           \n          </ion-card-content>\n\n    </ion-card-header>\n\n\n  </ion-card>\n</ion-content>\n'/*ion-inline-end:"/Users/corryhandayani/Desktop/studentreminder copy 2/src/pages/contact/contact.html"*/
+        selector: 'page-contact',template:/*ion-inline-start:"/Users/corryhandayani/Desktop/studentreminder copy 2/src/pages/contact/contact.html"*/'<ion-content class=background>\n <h1>STUDENT CIRCLE</h1>\n  <ion-card>    \n    <ion-card-header>\n        LOGIN\n          <ion-card-content>\n            <ion-list no-lines>\n\n              <ion-item>\n                <ion-label floating>Username </ion-label>\n                <ion-input type="text" #username></ion-input>\n              </ion-item>\n              \n\n              <ion-item>\n                  <ion-label floating>Password</ion-label>\n                  <ion-input type="Password"  #password></ion-input>\n                </ion-item>\n\n\n              <!--ion-item>\n                  <p>Forgot Password?<a> &nbsp;&nbsp;&nbsp;&nbsp;Click here</a></p>\n                  </ion-item-->\n             \n                  <button ion-button (click)="signInUser()"color="danger"block outline>Login</button>\n\n            </ion-list>\n\n            <b>OR</b>  &nbsp;&nbsp;&nbsp;&nbsp; \n            \n           \n\n                <!--button ion-button color="primary"ion-left block> \n                <ion-icon name="logo-facebook"></ion-icon>\n                <div>&nbsp;&nbsp;&nbsp;&nbsp;  Login with Facebook</div></button-->\n        \n                &nbsp;&nbsp;&nbsp;&nbsp; \n      \n                <button ion-button color="danger"ion-left block (click)="register()">\n                <ion-icon name="cube"></ion-icon>\n                <div>&nbsp;&nbsp;&nbsp;&nbsp; Register</div></button>\n         \n              <!--button ion-button color="danger"ion-left block (click)="register()">\n                 /// <ion-icon name="logo-googleplus"></ion-icon>\n                  //<div>&nbsp;&nbsp;&nbsp;&nbsp; Login with Google</div></button!-->\n           \n          </ion-card-content>\n\n    </ion-card-header>\n\n\n  </ion-card>\n</ion-content>\n'/*ion-inline-end:"/Users/corryhandayani/Desktop/studentreminder copy 2/src/pages/contact/contact.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_4_angularfire2_auth__["a" /* AngularFireAuth */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_google_plus__["a" /* GooglePlus */], __WEBPACK_IMPORTED_MODULE_3_angularfire2__["a" /* AngularFireModule */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */]])
 ], ContactPage);
@@ -257,7 +257,7 @@ var TabsPage = (function () {
     return TabsPage;
 }());
 TabsPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"/Users/corryhandayani/Desktop/studentreminder copy 2/src/pages/tabs/tabs.html"*/'<ion-tabs  color="primary">\n\n  <ion-tab [root]="tab2Root" tabTitle="Snap your notes here !" tabIcon="camera"></ion-tab>\n\n  <ion-tab [root]="tab4Root" tabTitle="Assignment due dates" tabIcon="calendar"></ion-tab>\n\n  <ion-tab [root]="tab1Root" tabTitle="Notify Me" tabIcon="cube"></ion-tab>\n  \n\n</ion-tabs>\n'/*ion-inline-end:"/Users/corryhandayani/Desktop/studentreminder copy 2/src/pages/tabs/tabs.html"*/
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"/Users/corryhandayani/Desktop/studentreminder copy 2/src/pages/tabs/tabs.html"*/'<ion-tabs  color="primary">\n\n  <ion-tab [root]="tab2Root" tabTitle="Snap your notes here!" tabIcon="camera"></ion-tab>\n\n  <ion-tab [root]="tab4Root" tabTitle="Assignment due dates" tabIcon="calendar"></ion-tab>\n\n  <ion-tab [root]="tab1Root" tabTitle="Notify Me" tabIcon="cube"></ion-tab>\n  \n\n</ion-tabs>\n'/*ion-inline-end:"/Users/corryhandayani/Desktop/studentreminder copy 2/src/pages/tabs/tabs.html"*/
     }),
     __metadata("design:paramtypes", [])
 ], TabsPage);
